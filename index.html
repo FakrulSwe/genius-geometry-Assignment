@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius Resources</title>
+    <!-- Tailwind Link CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header  class="container mx-auto bg-sky-100 rounded-md">
+        <!-- Nav -->
+        <nav class="container md:flex justify-between items-center p-6 pt-2 ">
+            <div class="w-56">
+                <h1> <span class="font-bold text-2xl">Interactive</span>
+                   <br> <nav class="text-lg text-slate-400">Geometry Genius</nav></h1>
+            </div>
+            <div class="md:flex gap-16">
+                <button class="rounded-md bg-sky-400 text-white font-semibold  px-3 py-0.5">Blog</button>
+            </div>
+
+        </nav>
+    </header> 
+    
+    <!-- Main Section -->
+    <main>
+        <!-- Featured Section -->
+    <section class=" sm:flex-none lg:flex gap-4 mx-24">
+    <!-- <section class="grid grid-cols-1 lg:grid-cols-2  mx-10 "> -->
+    <section class="container mx-auto">
+        <div class="flex justify-center mt-10">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:h-80 gap-5">
+          <div class="border border-solid text-center p-2 ">
+            <img class="mx-auto" src="./images/triangle.png" alt="" />
+            <h1 class="text-lg font-bold mt-5">Triangle</h1>
+            <p>Area (A) = 0.5 &#10005 b &#10005 h</p>
+            <div class="flex justify-center mt-3">
+                <div><input id="base" class="border border-solid w-7/12" type="text" placeholder=" b"><span> cm</span></div>
+                <div><input id="hight" class="border border-solid w-7/12" type="text" placeholder=" h"><span> cm</span></div>
+            </div>
+            <button id="CalculateTriangle" class="rounded-md bg-sky-400 text-white font-semibold mt-5 mb-5 w-40">Calculate</button>
+          </div>
+          <div class="border border-solid text-center p-5 pt-8">
+            <img class="mx-auto mt-5" src="./images/rectangle.png" alt="" />
+            <h1 class="text-lg font-bold mt-5">Rectangle</h1>
+            <p>Area (A) = w &#10005 l</p>
+            <div class="flex justify-center mt-3">
+            <div><input id="widthRectangle" class="border border-solid w-7/12" type="text" placeholder=" w"><span> cm</span></div>
+            <div><input id="lengthRectangle" class="border border-solid w-7/12" type="text" placeholder=" l"><span> cm</span></div>
+            </div>
+            <button id="CalculateRectangle" class="rounded-md bg-sky-400 text-white font-semibold mt-5 w-40">Calculate</button>
+          </div>
+          <div class="border border-solid text-center p-5 pt-10">
+            <img class="mx-auto mt-6" src="./images/parallelogram.png" alt="" />
+            <h1 class="text-lg font-bold mt-5">Parallelogram</h1>
+            <p>Area (A) = b &#10005 h</p>
+            <div class="flex justify-center mt-3">
+                <div><input id="baseParallelogram" class="border border-solid w-7/12" type="text" placeholder=" b"><span> cm</span></div>
+                <div><input id="hightParallelogram" class="border border-solid w-7/12" type="text" placeholder=" h"><span> cm</span></div>
+            </div>
+            <button id="CalculateParallelogram" class="rounded-md bg-sky-400 text-white font-semibold mt-5 w-40">Calculate</button>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-10">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:h-80">
+          <div class="border border-solid text-center p-5 pt-6">
+            <img class="mx-auto mt-10" src="./images/rhombus.png" alt="" />
+            <h1 class="text-lg font-bold mt-5">Rhombus</h1>
+            <p>Area (A) = 0.5 &#10005 d<sub>1</sub> &#10005 d<sub>2</sub></p>
+            <div class="flex justify-center mt-3">
+                <div><input id="rhombusD1" class="border border-solid w-7/12" type="text" placeholder=" d1"><span> cm</span></div>
+                <div><input id="rhombusD2" class="border border-solid w-7/12" type="text" placeholder=" d2"><span> cm</span></div>
+            </div>
+            <button id="CalculateRhombus" class="rounded-md bg-sky-400 text-white font-semibold mt-5 w-40">Calculate</button>
+          </div>
+          <div class="border border-solid text-center p-5 pt-2">
+            <img class="mx-auto pt-3" src="./images/pentagon.png" alt="" />
+            <h1 class="text-lg font-bold mt-5 pt-2">Pentagon</h1>
+            <p>Area (A) = 0.5 &#10005 p &#10005 b</p>
+            <div class="flex justify-center mt-3">
+                <div><input id="pentagonPerimeter" class="border border-solid w-7/12" type="text" placeholder=" p"><span> cm</span></div>
+                <div><input id="pentagonBase" class="border border-solid w-7/12" type="text" placeholder=" b"><span> cm</span></div>
+            </div>
+            <button id="CalculatePentagon" class="rounded-md bg-sky-400 text-white font-semibold mt-5 w-40">Calculate</button>
+          </div>
+          <div class="border border-solid text-center p-5 pt-10">
+            <img class="mx-auto mt-12" src="./images/ellipse.png" alt="" />
+            <h1 class="text-lg font-bold mt-5">Ellipse</h1>
+            <p>Area (A) = &prod;ab2<sup>2</sup></p>
+            <div class="flex justify-center mt-3">
+                <div><input id="ellipseMass"  class="border border-solid w-7/12" type="text" placeholder=" a"><span> cm</span></div>
+                <div><input id="ellipseBase" class="border border-solid w-7/12" type="text" placeholder=" b"><span> cm</span></div>
+            </div>
+            <button id="CalculateEllipse" class="rounded-md bg-sky-400 text-white font-semibold mt-5 w-40">Calculate</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Area Calculation -->
+      <section class="container mx-auto w-6/12 border border-solid mt-10">
+        <div class="p-5 text-center">
+          <h1 class="flex justify-center text-lg underline underline-offset-4 pt-5">Area Calculation</h1>
+          <br>
+
+          <textarea class="text-lg pt-5 " name="" id="areaCalculation" cols="32" rows="15"></textarea>
+          
+        </div>
+      </div>
+    </section>
+    </section>
+    <script src="js/app.js"></script>
+    </main>
+</body>
+</html>
